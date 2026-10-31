@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<modDesc descVersion="92">
+    <author>FS Modding</author>
+    <version>1.0.0.0</version>
+    <multiplayer supported="true"/>
+    <iconFilename>icon.dds</iconFilename>
+
+    <title>
+        <en>Mechanic Workshop</en>
+        <de>Werkstatt-Mechaniker</de>
+    </title>
+
+    <description>
+        <en><![CDATA[Take your vehicles to the mechanic instead of repairing them instantly.
+
+- New "Send to mechanic" button in the workshop menu, next to Repair
+- The repair takes 1 to 2 days, depending on the damage
+- While at the mechanic, the vehicle is gone: you cannot TAB into it or use it
+- You get a notification when the vehicle is ready, and it comes back where you left it
+- Need it right now? "Quick repair" is instant but costs double
+- Works together with the Tire Wear mod: worn tires are replaced during the service
+- Multiplayer supported]]></en>
+        <de><![CDATA[Bring deine Fahrzeuge zum Mechaniker, statt sie sofort zu reparieren.
+
+- Neuer Button "Zum Mechaniker" im Werkstattmenue, neben Reparieren
+- Die Reparatur dauert 1 bis 2 Tage, je nach Schaden
+- Waehrend das Fahrzeug beim Mechaniker ist, ist es weg: kein TAB und keine Nutzung
+- Du erhaeltst eine Benachrichtigung, wenn das Fahrzeug fertig ist, es steht dann wieder dort, wo du es gelassen hast
+- Sofort noetig? "Schnellreparatur" ist sofort fertig, kostet aber das Doppelte
+- Funktioniert mit dem Mod Tire Wear: abgenutzte Reifen werden beim Service gewechselt
+- Multiplayer wird unterstuetzt]]></de>
+    </description>
+
+    <extraSourceFiles>
+        <sourceFile filename="scripts/MechanicJobEvent.lua"/>
+        <sourceFile filename="scripts/RegisterMechanicWorkshop.lua"/>
+    </extraSourceFiles>
+
+    <l10n>
+        <text name="mw_btnMechanic">
+            <en>Send to mechanic</en>
+            <de>Zum Mechaniker</de>
+        </text>
+        <text name="mw_btnQuick">
+            <en>Quick repair</en>
+            <de>Schnellreparatur</de>
+        </text>
+        <text name="mw_days">
+            <en>%.1f days</en>
+            <de>%.1f Tage</de>
+        </text>
+        <text name="mw_sent">
+            <en>The vehicle was taken to the mechanic. It will be ready in %s.</en>
+            <de>Das Fahrzeug ist beim Mechaniker. Es ist in %s fertig.</de>
+        </text>
+        <text name="mw_ready">
+            <en>%s is ready! The mechanic finished the service.</en>
+            <de>%s ist fertig! Der Mechaniker hat den Service abgeschlossen.</de>
+        </text>
+        <text name="mw_nothingToDo">
+            <en>This vehicle does not need any service.</en>
+            <de>Dieses Fahrzeug braucht keinen Service.</de>
+        </text>
+        <text name="mw_noMoney">
+            <en>Not enough money (%s).</en>
+            <de>Nicht genug Geld (%s).</de>
+        </text>
+    </l10n>
+</modDesc>
